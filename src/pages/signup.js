@@ -38,10 +38,6 @@ const tailFormItemLayout = {
 const Signup = () => {
   const [form] = Form.useForm();
 
-  const onFinish = (values) => {
-    console.log("Received values of form: ", values);
-  };
-
   const prefixSelector = (
     <Form.Item name="prefix" noStyle>
       <Select
@@ -61,7 +57,6 @@ const Signup = () => {
       {...formItemLayout}
       form={form}
       name="register"
-      onFinish={onFinish}
       initialValues={{
         prefix: "1",
       }}
