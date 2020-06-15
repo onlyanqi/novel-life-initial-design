@@ -8,13 +8,13 @@
 * Anqi Chen B00838586 (anqi.chen@dal.ca) 
 
 ## Table of Contents
-- [Live display] (#live display)
+- [Live display] (#live-display)
 - [Introduction](#introduction)
 - [Prerequisites](#prerequisites)
 - [Local development](#local-development)
 - [Deployment](#deployment)
-- [Built With](#built With)
-- [Sources Used](#sources Used)
+- [Built With](#built-with)
+- [Sources Used](#sources-used)
 - [References] (#references)
 
 ## Live display
@@ -35,7 +35,6 @@ React
 Ant Design(UI library)
 Mapbox(demonstrate a map in the page: help)
 
-
 See the following section for detailed step-by-step instructions on how to install this software / libraries / plug-ins
 
 ### local-development
@@ -44,7 +43,6 @@ See the following section for detailed step-by-step instructions on how to insta
 * Navigate to the folder by 'cd react-novel-life'
 * Install the npm modules by: 'npm install'
 * Run 'npm start' to start the web application and open this address on your browser: http://localhost:3000.
-
 
 ## Deployment
 
@@ -78,9 +76,8 @@ Lines 41 - 52
     </Form.Item>
   );
 
-- <!---How---> The code in [Ant Design](https://ant.design/) is modified by setting some options inside the <select> label of <Form.Item>
-- <!---Why---> [Ant Design](https://ant.design/)'s Code was used because I'm not familiar with the 'Form' component it offers and I want to add the selection of the prefix of telephone numbers.
-
+- How The code in [Ant Design](https://ant.design/) is modified by setting some options inside the <select> label of <Form.Item>
+- Why [Ant Design](https://ant.design/)'s Code was used because I'm not familiar with the 'Form' component it offers and I want to add the selection of the prefix of telephone numbers.
 
 ### user.js
 
@@ -100,9 +97,8 @@ Lines 13 - 25
         <Avatar size={28} icon={<LinkedinOutlined />} className="account" />
       </div>
 
-- [How] The code in [jspang](https://jspang.com/detailed?id=52) was modified by using the similar format to implement a user's profile.
-- [Why] [jspang](https://jspang.com/detailed?id=52)'s Code was used because I do not know how the implement this section, and I was inspired by his code which is implementing the similar part in a personal blog.
-
+- How The code in [jspang](https://jspang.com/detailed?id=52) was modified by using the similar format to implement a user's profile.
+- Why [jspang](https://jspang.com/detailed?id=52)'s Code was used because I do not know how the implement this section, and I was inspired by his code which is implementing the similar part in a personal blog.
 
 ## References
 
