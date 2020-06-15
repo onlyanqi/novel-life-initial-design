@@ -1,68 +1,113 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Assignment 2
 
-## Available Scripts
+* Date Created: 06 06 2020
+* Last Modification Date: 13 06 2020
 
-In the project directory, you can run:
+## Author
 
-### `yarn start`
+* Anqi Chen B00838586 (anqi.chen@dal.ca) 
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Table of Contents
+- [Live display] (#live display)
+- [Introduction](#introduction)
+- [Prerequisites](#prerequisites)
+- [Local development](#local-development)
+- [Deployment](#deployment)
+- [Built With](#built With)
+- [Sources Used](#sources Used)
+- [References] (#references)
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## Live display
+[Noval Life App deployed to Heroku](https://react-noval-life.herokuapp.com/)
 
-### `yarn test`
+## Introduction
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+This project uses ReactJS, Ant Design, and Mapbox to implement the web application about covid-19. It contains 4 main pages: landing(home), login/registration, latest updates and helpwhich is based on my personal interest and previous project.
 
-### `yarn build`
+This assignment focuses on understanding the application of usability and design principles for creating the overall look-and-feel of a web application’s UI. It is all about front end part without backend surpports.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Prerequisites
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+To have a local copy of this project and run it on your local machine, you will first need to install the following software / libraries / plug-ins:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Latest version of npm installed
+React
+Ant Design(UI library)
+Mapbox(demonstrate a map in the page: help)
 
-### `yarn eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+See the following section for detailed step-by-step instructions on how to install this software / libraries / plug-ins
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### local-development
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+* Clone the repo: git clone https://github.com/onlyanqi/react-noval-life.git
+* Navigate to the folder by 'cd react-novel-life'
+* Install the npm modules by: 'npm install'
+* Run 'npm start' to start the web application and open this address on your browser: http://localhost:3000.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+## Deployment
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+This assignment is available on GitHub and Heroku:
+GIT Repository Link: https://github.com/onlyanqi/react-noval-life.git
+Heroku Deployment Link: https://react-noval-life.herokuapp.com/
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Built With
 
-### Code Splitting
+* [React](https://reactjs.org/docs/getting-started.html) - A JavaScript library for building user interfaces
+* [Ant Design](https://ant.design/) - UI Library
+* [Mapbox](https://www.mapbox.com/) - Maps and location for developers
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+## Sources Used
 
-### Analyzing the Bundle Size
+### login.js
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+Lines 41 - 52
+---------------
 
-### Making a Progressive Web App
+  const prefixSelector = (
+    <Form.Item name="prefix" noStyle>
+      <Select
+        style={{
+          width: 70,
+        }}
+      >
+        <Option value="1">+1</Option>
+        <Option value="86">+86</Option>
+      </Select>
+    </Form.Item>
+  );
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+- <!---How---> The code in [Ant Design](https://ant.design/) is modified by setting some options inside the <select> label of <Form.Item>
+- <!---Why---> [Ant Design](https://ant.design/)'s Code was used because I'm not familiar with the 'Form' component it offers and I want to add the selection of the prefix of telephone numbers.
 
-### Advanced Configuration
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+### user.js
 
-### Deployment
+Lines 13 - 25
+---------------
+   <div>
+        <Avatar
+          size={100}
+          src="https://image.flaticon.com/icons/svg/3039/3039750.svg"
+        />
+      </div>
+      <div className="user-introduction">
+        Hello! you've logged in
+        <Divider>Social Media</Divider>
+        <Avatar size={28} icon={<TwitterOutlined />} className="account" />
+        <Avatar size={28} icon={<FacebookOutlined />} className="account" />
+        <Avatar size={28} icon={<LinkedinOutlined />} className="account" />
+      </div>
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+- [How] The code in [jspang](https://jspang.com/detailed?id=52) was modified by using the similar format to implement a user's profile.
+- [Why] [jspang](https://jspang.com/detailed?id=52)'s Code was used because I do not know how the implement this section, and I was inspired by his code which is implementing the similar part in a personal blog.
 
-### `yarn build` fails to minify
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+## References
+
+* 30 free vector icons of Charity designed by Eucalyp. Flaticon. Retrieved from https://www.flaticon.com/packs/charity-101
+* Causes of Heroku H10-App Crashed Error And How To Solve Them - DEV. Retrieved from https://dev.to/lawrence_eagles/causes-of-heroku-h10-app-crashed-error-and-how-to-solve-them-3jnl
+* Icon - Ant Design. Retrieved from https://ant.design/components/icon/
+* Introduction. Mapbox. Retrieved from https://www.mapbox.com/mapbox-gl-js/api/
+* 技术胖-React Hooks+Egg.js实战视频教程-技术胖Blog开发. Retrieved from https://jspang.com/detailed?id=52
