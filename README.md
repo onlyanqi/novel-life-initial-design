@@ -18,6 +18,7 @@
 - [References] (#references)
 
 ## Live display
+
 [Noval Life App deployed to Heroku](https://react-noval-life.herokuapp.com/)
 
 ## Introduction
@@ -60,9 +61,7 @@ Heroku Deployment Link: https://react-noval-life.herokuapp.com/
 
 ### login.js
 
-Lines 41 - 52
----------------
-
+Lines 41 - 52:
   const prefixSelector = (
     <Form.Item name="prefix" noStyle>
       <Select
@@ -81,9 +80,8 @@ Lines 41 - 52
 
 ### user.js
 
-Lines 13 - 25
----------------
-   <div>
+Lines 13 - 25:
+      <div>
         <Avatar
           size={100}
           src="https://image.flaticon.com/icons/svg/3039/3039750.svg"
